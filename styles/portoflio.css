@@ -1,0 +1,116 @@
+/* Global Styles */
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#30d307d7;
+color:#333;
+}
+
+
+/* Navigation Menu */
+
+nav{
+background:#2c06eb;
+padding:10px;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+justify-content:center;
+margin:0;
+padding:0;
+}
+
+nav li{
+margin:0 15px;
+}
+
+nav a{
+color:rgb(177, 244, 7);
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#07f07f;
+}
+
+
+/* Hero Section */
+
+.hero{
+text-align:center;
+padding:40px;
+background:#eae204;
+color:rgb(73, 27, 240);
+}
+
+.hero img{
+width:150px;
+border-radius:50%;
+border:4px solid rgb(93, 7, 252);
+}
+
+
+/* Section Styling */
+
+section{
+padding:40px;
+text-align:center;
+}
+
+
+/* Project Cards */
+
+.projects{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.project-card{
+background:rgb(247, 6, 6);
+width:300px;
+padding:15px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.project-card img{
+width:100%;
+border-radius:5px;
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+}
+
+
+/* Contact Section */
+
+.contact{
+background:#333;
+color:rgb(125, 4, 156);
+}
+
+
+/* Responsive Design */
+
+@media (max-width:768px){
+
+nav ul{
+flex-direction:column;
+text-align:center;
+}
+
+.projects{
+flex-direction:column;
+align-items:center;
+}
+
+}

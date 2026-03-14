@@ -1,0 +1,53 @@
+*{
+margin: 0px;
+padding: 0px;
+
+}
+
+
+.cardcontainer{
+    display: flex;
+    margin: 10px;
+    gap: 33px;
+}
+
+
+.card{
+    background-color: burlywood;
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 17px
+
+}
+
+
+
+.card img{
+width: 100%;
+border-radius: 30px;
+}
+
+.card h2{
+margin-top: 15px;
+}
+
+.card p{
+    font-size: 15px;
+}
+.card button{
+    margin-top: 16px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background: #00a3ff;
+    width: 200px;
+    border-radius: 2px ;
+    height: 20px;
+    margin-left: 23px;
+
+}
+.card button:hover{
+    color: #00a3ff;
+    background: white ;
+
+}

@@ -1,0 +1,107 @@
+/* Page Styling */
+
+body{
+font-family: Arial;
+margin:40px;
+background:#6b6464;
+}
+
+h1{
+text-align:center;
+margin-bottom:30px;
+}
+
+/* Horizontal Navigation */
+
+.navbar ul{
+list-style:none;
+display:flex;
+background:#db7272;
+padding:0;
+margin:0;
+}
+
+.navbar li{
+position:relative;
+}
+
+.navbar a{
+display:block;
+padding:14px 20px;
+color:rgb(133, 30, 30);
+text-decoration:none;
+transition:0.3s;
+}
+
+/* Hover State */
+
+.navbar a:hover{
+background:#310101;
+}
+
+/* Active State */
+
+.navbar .active{
+background:#038eeb;
+}
+
+/* Dropdown Menu */
+
+.dropdown-menu{
+display:none;
+position:absolute;
+top:100%;
+left:0;
+background:#444;
+min-width:150px;
+flex-direction:column;
+}
+
+.dropdown-menu a{
+padding:10px;
+}
+
+/* Show dropdown on hover */
+
+.dropdown:hover .dropdown-menu{
+display:block;
+}
+
+/* Vertical Menu */
+
+.vertical-menu{
+width:200px;
+margin-top:40px;
+border:1px solid #ccc;
+}
+
+.vertical-menu a{
+display:block;
+padding:12px;
+background:rgb(100, 6, 6);
+text-decoration:none;
+color:black;
+border-bottom:1px solid #ddd;
+transition:0.3s;
+}
+
+.vertical-menu a:hover{
+background:#151212;
+}
+
+/* Active link */
+
+.vertical-menu .active{
+background:#1d0df2;
+color:white;
+}
+
+/* Responsive Design */
+
+@media (max-width:600px){
+
+.navbar ul{
+flex-direction:column;
+}
+
+}

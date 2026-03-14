@@ -1,0 +1,42 @@
+.btn{
+    background-color: rgb(14,44, 233);
+    cursor:pointer;
+    font-weight: 20px;
+    color: rgb(214, 25, 25);
+    border: none;
+    border-radius: 10px;
+}
+/* small */
+.small{
+    font-size: 14px;
+    padding: 10px;
+}
+.medium{
+    font-size: 16px;
+}
+.large{
+    font-size: 40px;
+
+}
+/* colors */
+.green{
+    background-color: green;
+
+
+}
+.blue{
+    background-color: blue;
+}
+.red{
+    background-color: red;
+}
+.round{
+    border-radius: 10px;
+}
+.pill{
+    border-radius: 50px;
+}
+.shadow{    
+background:#6c5ce7;
+box-shadow:0 5px 10px rgba(0,0,0,0.4);
+}

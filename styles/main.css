@@ -1,0 +1,119 @@
+/* =========================
+BASIC SELECTORS
+========================= */
+/* 1 Element selector */
+p{
+color:blue;
+}
+/* 2 ID selector */
+#special{
+color:red;
+}
+/* 3 Class selector */
+.highlight{
+background:yellow;
+}
+/* 4 Universal selector */
+*{
+font-family:Arial;
+}
+/* 5 Group selector */
+h1,h2{
+text-align:center;
+}
+
+
+
+/* =========================
+ATTRIBUTE SELECTORS
+========================= */
+
+/* attribute selector */
+a[target]{
+color:green;
+}
+
+/* attribute with value */
+input[type="text"]{
+border:2px solid black;
+padding:5px;
+}
+
+/* attribute starting with https */
+a[href^="https"]{
+font-weight:bold;
+}
+
+
+
+/* =========================
+COMBINATORS
+========================= */
+
+/* descendant combinator */
+div p{
+color:purple;
+}
+
+/* child combinator */
+ul > li{
+color:orange;
+}
+
+/* adjacent sibling */
+h1 + p{
+background:lightgray;
+}
+
+/* general sibling */
+h1 ~ ul{
+border:2px solid black;
+}
+
+
+
+/* =========================
+PSEUDO CLASSES
+========================= */
+
+/* hover state */
+a:hover{
+color:red;
+}
+
+/* first child */
+li:first-child{
+color:blue;
+}
+
+/* last child */
+li:last-child{
+color:green;
+}
+
+/* nth child */
+li:nth-child(2){
+font-weight:bold;
+}
+
+/* active state */
+p:active{
+background:pink;
+}
+
+
+
+/* =========================
+PSEUDO ELEMENTS
+========================= */
+
+/* first letter styling */
+p::first-letter{
+font-size:30px;
+color:black;
+}
+
+/* add content after paragraph */
+p::after{
+content:" ✔";
+}

@@ -1,0 +1,129 @@
+body{
+font-family: Arial;
+background:#f4f4f4;
+text-align:center;
+margin:40px;
+}
+
+
+/* Gradient Text */
+
+.gradient-text{
+font-size:40px;
+background:linear-gradient(45deg, rgb(172, 46, 46), rgb(210, 137, 2), rgb(219, 187, 5));
+color:transparent;
+}
+
+
+/* Custom Checkbox */
+
+.custom-checkbox{
+display:inline-flex;
+align-items:center;
+cursor:pointer;
+margin:10px;
+}
+
+.custom-checkbox input{
+display:none;
+}
+
+.checkmark{
+width:20px;
+height:20px;
+border:2px solid rgb(234, 120, 6);
+margin-right:10px;
+position:relative;
+}
+
+.custom-checkbox input:checked + .checkmark{
+background:#e71603;
+}
+
+.checkmark::after{
+content:"";
+position:absolute;
+display:none;
+}
+
+.custom-checkbox input:checked + .checkmark::after{
+display:block;
+left:6px;
+top:2px;
+width:5px;
+height:10px;
+border:solid rgb(122, 167, 239);
+border-width:0 2px 2px 0;
+transform:rotate(45deg);
+}
+
+
+/* Custom Radio Buttons */
+
+.custom-radio{
+display:inline-flex;
+align-items:center;
+margin:10px;
+cursor:pointer;
+}
+
+.custom-radio input{
+display:none;
+}
+
+.radio{
+width:20px;
+height:20px;
+border:2px solid black;
+border-radius:50%;
+margin-right:10px;
+position:relative;
+}
+
+.custom-radio input:checked + .radio{
+background:#2ecc71;
+}
+
+
+/* Loading Animation */
+
+.loader{
+border:6px solid #eee;
+border-top:6px solid #3498db;
+border-radius:50%;
+width:60px;
+height:60px;
+margin:20px auto;
+animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+}
+
+
+/* Text Clipping with Background Image */
+
+.image-text{
+font-size:60px;
+font-weight:bold;
+background:url("https://picsum.photos/600/300");
+background-size:cover;
+color:transparent;
+}
+
+
+/* Complex Shadow Effects */
+
+.shadow-box{
+margin-top:20px;
+padding:40px;
+background:white;
+display:inline-block;
+font-size:20px;
+box-shadow:
+0 4px 10px rgba(0,0,0,0.2),
+0 10px 20px rgba(0,0,0,0.3),
+0 20px 30px rgba(0,0,0,0.1);
+}

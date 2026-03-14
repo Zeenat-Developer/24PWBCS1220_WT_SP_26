@@ -1,0 +1,92 @@
+/* Page Styling */
+
+body{
+font-family: Arial;
+background:#f4f4f4;
+text-align:center;
+margin:40px;
+}
+
+h1{
+margin-bottom:20px;
+}
+
+
+/* Table Container for Responsive Design */
+
+.table-container{
+overflow-x:auto;
+}
+
+
+/* Table Styling */
+
+table{
+width:80%;
+margin:auto;
+border-collapse:collapse;
+background:white;
+}
+
+
+/* Table Headers */
+
+th{
+background:#3498db;
+color:white;
+padding:12px;
+}
+
+
+/* Table Cells */
+
+td{
+padding:12px;
+border:1px solid #ddd;
+}
+
+
+/* Zebra Striping */
+
+tbody tr:nth-child(even){
+background:#f9f9f9;
+}
+
+
+/* Hover Effect */
+
+tbody tr:hover{
+background:#e8f4ff;
+cursor:pointer;
+}
+
+
+/* Color-coded Course Types */
+
+.lecture{
+border-left:6px solid #2ecc71;
+}
+
+.lab{
+border-left:6px solid #e67e22;
+}
+
+.seminar{
+border-left:6px solid #9b59b6;
+}
+
+
+/* Responsive Table */
+
+@media (max-width:768px){
+
+table{
+width:100%;
+font-size:14px;
+}
+
+th, td{
+padding:8px;
+}
+
+}

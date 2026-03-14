@@ -1,0 +1,52 @@
+h1 {
+  text-align: center;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  /* background: blue; */
+  font-size: bold;
+  font-weight: bold;
+  padding: 10px;
+}
+/* Image backgrounds  */
+.repeat{
+
+    background-image: url('/images/img1.jpg');
+    background-repeat:repeat;
+    color: black;
+}
+.repeat-x{
+    background-image: url('/images/img2.jpg');
+    background-repeat:true ;
+    color: orange;
+}
+.repeat-y{
+    background-image: url('/images/img3.jpg');
+}
+
+/* linear G */
+.linear{
+background:linear-gradient(to right, red, orange, yellow);
+}
+/* Radial gradient */
+
+.radial{
+background:radial-gradient(circle, blue, purple);
+}
+.multiple{
+background-image:
+url("/images/img2.jpg"),
+linear-gradient(green, lightgreen);
+background-repeat:no-repeat;
+background-position:right bottom, left top;
+}
+.blend{
+background-image:
+url("/images/img1.jpg"),
+linear-gradient(red, blue);
+background-blend-mode:multiply;
+}
+.cont{
+    display: flex;
+}

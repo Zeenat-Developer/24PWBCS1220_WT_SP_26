@@ -1,0 +1,58 @@
+body{
+font-family:Arial;
+margin:20px;
+}
+
+div{
+height:200px;
+margin-bottom:30px;
+border:2px solid #ccc;
+}
+
+/* Solid background */
+
+.solid{
+background-color:lightblue;
+}
+
+
+/* Image background with repeat pattern */
+
+.image-repeat{
+background-image:url("images/backgrounds/bg.jpg");
+background-repeat:repeat-x;
+}
+
+
+/* Linear gradient */
+
+.linear-gradient{
+background:linear-gradient(to right, red, yellow);
+}
+
+
+/* Radial gradient */
+
+.radial-gradient{
+background:radial-gradient(circle, blue, white);
+}
+
+
+/* Multiple background layers */
+
+.multiple-background{
+background-image:
+url("images/backgrounds/bg.jpg"),
+linear-gradient(green, yellow);
+background-size:200px, auto;
+}
+
+
+/* Background blend mode */
+
+.blend-background{
+background-image:
+url("images/backgrounds/bg.jpg"),
+linear-gradient(red, blue);
+background-blend-mode:multiply;
+}
